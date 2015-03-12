@@ -2,8 +2,8 @@ execute pathogen#infect()
 
 " tab indents and stuff
 set sw=4
-com Hardtab set ts=4 noet
-com Softtab set ts=8 sts=4 et
+com! Hardtab set ts=4 noet
+com! Softtab set ts=8 sts=4 et
 Hardtab
 
 " show line numbers
@@ -11,6 +11,12 @@ set nu
 
 " get rid of the not-very-useful GUI toolbar
 set go-=T
+
+" nicer font for my gvim
+set guifont=Monospace\ 9
+
+" trying to scroll a lightyear shouldn't take a year
+set mouse=a
 
 " swapfiles are annoying
 set noswf
@@ -27,11 +33,16 @@ if has('gui_running') || &t_Co == 256
 
 	" highlight current line
 	" (lack of colors makes cursorline look weird)
-	set cursorline
+	" commented because redraws take forever when enabled
+	"set cursorline
 endif
 
+" indent-guides
+let g:indent_guides_guide_size = 1
+"hi IndentGuidesOdd ctermbg=lightgrey
+
 " airline shiz
-if &encoding == 'utf-8' && &term !~ 'linux*'
+if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || &term !~# '^linux')
 	let g:airline_powerline_fonts = 1
 endif
 let g:airline#extensions#tabline#enabled = 1
@@ -40,7 +51,3 @@ let g:airline#extensions#hunks#non_zero_only = 1
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
-
-" red unwanted whitespace (http://vim.wikia.com/wiki/Highlight_unwanted_spaces)
-hi ExtraWhitespace ctermbg=red guibg=red
-au Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
