@@ -13,7 +13,11 @@ set nu
 set go-=T
 
 " nicer font for my gvim
-set guifont=Monospace\ 9
+if has('win32')
+	set guifont=Consolas
+else
+	set guifont=Monospace\ 9
+endif
 
 " trying to scroll a lightyear shouldn't take a year
 set mouse=a
