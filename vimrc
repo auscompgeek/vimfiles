@@ -20,7 +20,9 @@ else
 endif
 
 " trying to scroll a lightyear shouldn't take a year
-set mouse=a
+if has('mouse')
+	set mouse=a
+endif
 
 " swapfiles are annoying
 set noswf
