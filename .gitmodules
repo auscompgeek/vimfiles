@@ -43,3 +43,6 @@
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/vim-processing"]
+	path = bundle/vim-processing
+	url = https://github.com/sophacles/vim-processing.git
