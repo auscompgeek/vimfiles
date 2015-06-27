@@ -11,6 +11,8 @@ set nu
 
 " get rid of the not-very-useful GUI toolbar
 set go-=T
+" and the scrollbar as well
+set go-=r
 
 " nicer font for my gvim
 if has('win32')
