@@ -1,0 +1,26 @@
+if has('autocmd')
+	filetype plugin indent on
+endif
+if has('syntax') && !exists('g:syntax_on')
+	syn on
+endif
+
+set ts=4
+
+" trying to scroll a lightyear shouldn't take a year
+if has('mouse')
+	set mouse=a
+endif
+
+" swapfiles are annoying
+set noswf
+
+" look up word under the cursor in Zeal
+nnoremap gz :!zeal --query "<cword>"&<CR><CR>
+
+" Tomorrow-Night-Bright looks weird with 88 colours
+if &t_Co == 256
+	colo Tomorrow-Night-Bright
+endif
+
+" vim: ft=vim
