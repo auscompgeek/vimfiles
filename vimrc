@@ -50,7 +50,7 @@ let g:indent_guides_guide_size = 1
 "hi IndentGuidesOdd ctermbg=lightgrey
 
 " airline shiz
-if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || &term !~# '^linux')
+if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || &term !~# '^linux\|^putty')
 	let g:airline_powerline_fonts = 1
 endif
 let g:airline#extensions#tabline#enabled = 1
