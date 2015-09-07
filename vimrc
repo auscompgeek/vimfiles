@@ -13,6 +13,8 @@ set nu
 set go-=T
 " and the scrollbar as well
 set go-=r
+" and the other one
+set go-=L
 
 " nicer font for my gvim
 if has('win32')
