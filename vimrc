@@ -35,7 +35,8 @@ set noswf
 nnoremap gz :!zeal --query "<cword>"&<CR><CR>
 
 " my shift-finger is falling off
-nnoremap ; :
+noremap ; :
+noremap , ;
 
 " Tomorrow-Night-Bright looks weird with 88 colours.
 if has('gui_running') || &t_Co == 256
@@ -47,9 +48,8 @@ if has('gui_running') || &t_Co == 256
 	"set cursorline
 endif
 
-" indent-guides
-let g:indent_guides_guide_size = 1
-"hi IndentGuidesOdd ctermbg=lightgrey
+" apparently terminals are small?
+set colorcolumn=80,132
 
 " airline shiz
 if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || &term !~# '^linux\|^putty')
