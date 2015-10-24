@@ -60,7 +60,10 @@ let g:airline#extensions#hunks#non_zero_only = 1
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+nnoremap <F3> :Errors<CR>
 
 " tagbar
 nnoremap <F8> :TagbarToggle<CR>
