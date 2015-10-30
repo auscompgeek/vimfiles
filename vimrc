@@ -58,6 +58,9 @@ endif
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#non_zero_only = 1
 
+" supertab
+let g:SuperTabDefaultCompletionType = "context"
+
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
