@@ -1,5 +1,6 @@
 " Taken from https://github.com/ConradIrwin/vim-bracketed-paste,
-" without the tmux wrapping code, since tmux 1.7+ supports bracketed paste.
+" without the tmux wrapping, since tmux 1.7+ supports bracketed paste.
+" Also prefers native Neovim support.
 
 " Code from:
 " http://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x
@@ -11,6 +12,11 @@
 " http://www.xfree86.org/current/ctlseqs.html
 " Docs on mapping fast escape codes in vim
 " http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
+
+" Neovim has bracketed paste support.
+if has('nvim')
+	finish
+endif
 
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
