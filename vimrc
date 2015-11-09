@@ -68,5 +68,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 nnoremap <F3> :Errors<CR>
 
+" gundo
+let g:gundo_prefer_python3 = 1
+nnoremap <F5> :GundoToggle<CR>
+
 " tagbar
 nnoremap <F8> :TagbarToggle<CR>
