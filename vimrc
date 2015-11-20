@@ -2,8 +2,8 @@ execute pathogen#infect()
 
 " tab indents and stuff
 set sw=4
-com! Hardtab set ts=4 noet
-com! Softtab set ts=8 sts=4 et
+com! -bar Hardtab set ts=4 noet
+com! -bar Softtab set ts=8 sts=4 et
 Hardtab
 
 " show line numbers
