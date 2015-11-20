@@ -52,3 +52,9 @@
 [submodule "bundle/vim-mundo"]
 	path = bundle/vim-mundo
 	url = https://github.com/simnalamburt/vim-mundo.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git

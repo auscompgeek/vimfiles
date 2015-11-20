@@ -57,9 +57,14 @@ if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || 
 endif
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#non_zero_only = 1
+set noshowmode
 
 " supertab
 let g:SuperTabDefaultCompletionType = "context"
+
+" delimitMate
+au FileType python let b:delimitMate_nesting_quotes = ['"']
+au FileType html setlocal matchpairs+=<:>
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
@@ -74,3 +79,6 @@ nnoremap <F5> :GundoToggle<CR>
 
 " tagbar
 nnoremap <F8> :TagbarToggle<CR>
+
+" jedi
+let g:jedi#show_call_signatures = 2
