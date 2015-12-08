@@ -64,6 +64,7 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " delimitMate
 au FileType python let b:delimitMate_nesting_quotes = ['"']
+au FileType markdown let b:delimitMate_nesting_quotes = ['`']
 au FileType html setlocal matchpairs+=<:>
 
 " syntastic
