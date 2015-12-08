@@ -72,6 +72,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_ignore_files = ['\M.pyi$']
 nnoremap <F3> :Errors<CR>
 
 " gundo
@@ -83,3 +84,4 @@ nnoremap <F8> :TagbarToggle<CR>
 
 " jedi
 let g:jedi#show_call_signatures = 2
+au BufNewFile,BufRead *.pyi setf python
