@@ -38,6 +38,11 @@ nnoremap gz :!zeal --query "<cword>"&<CR><CR>
 noremap ; :
 noremap , ;
 
+" vim is stupid.
+if !has('nvim') && &term == 'tmux-256color'
+	set term=screen-256color
+endif
+
 " Tomorrow-Night-Bright looks weird with 88 colours.
 if has('gui_running') || &t_Co == 256
 	colo Tomorrow-Night-Bright
