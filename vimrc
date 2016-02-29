@@ -79,6 +79,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_ignore_files = ['\M.pyi$']
 nnoremap <F3> :Errors<CR>
+nnoremap <F4> :SyntasticToggleMode<CR>
 
 " gundo
 let g:gundo_prefer_python3 = 1
