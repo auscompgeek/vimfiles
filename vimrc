@@ -2,9 +2,19 @@ execute pathogen#infect()
 
 " tab indents and stuff
 set sw=4
-com! -bar Hardtab set ts=4 noet
-com! -bar Softtab set ts=8 sts=4 et
-Hardtab
+com! -bar HardTab set ts=4 noet
+com! -bar SoftTab set ts=8 sts=4 et
+HardTab
+
+nnoremap <expr> cot ToggleTab()
+
+func ToggleTab()
+	if &et
+		HardTab
+	else
+		SoftTab
+	endif
+endfunc
 
 " show line numbers
 set nu
@@ -91,3 +101,5 @@ nnoremap <F8> :TagbarToggle<CR>
 " jedi
 let g:jedi#show_call_signatures = 2
 au BufNewFile,BufRead *.pyi setf python
+
+"let g:python_space_error_highlight = 1
