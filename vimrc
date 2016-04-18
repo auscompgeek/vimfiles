@@ -67,6 +67,9 @@ endif
 " apparently terminals are small?
 set colorcolumn=80,132
 
+" ignore case by default when searching, except when I use uppercase
+set ignorecase smartcase
+
 " airline shiz
 if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || &term !~# '^linux\|^putty')
 	let g:airline_powerline_fonts = 1
