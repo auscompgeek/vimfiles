@@ -1,12 +1,13 @@
 execute pathogen#infect()
 
 " tab indents and stuff
-set sw=4
-com! -bar HardTab set ts=4 noet
-com! -bar SoftTab set ts=8 sts=4 et
+com! -bar -count=4 HardTab set ts=<count> sw=<count> noet
+com! -bar -count=4 SoftTab set ts=8 sts=<count> sw=<count> et
 HardTab
 
 nnoremap <expr> cot ToggleTab()
+nnoremap [ot :SoftTab<CR>
+nnoremap ]ot :HardTab<CR>
 
 func ToggleTab()
 	if &et
