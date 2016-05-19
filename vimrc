@@ -102,6 +102,10 @@ nnoremap <F5> :GundoToggle<CR>
 " tagbar
 nnoremap <F8> :TagbarToggle<CR>
 
+" emmet
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 " jedi
 let g:jedi#show_call_signatures = 2
 au BufNewFile,BufRead *.pyi setf python
