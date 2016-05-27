@@ -111,3 +111,6 @@ let g:jedi#show_call_signatures = 2
 au BufNewFile,BufRead *.pyi setf python
 
 "let g:python_space_error_highlight = 1
+
+" source a local vimrc, if any
+runtime! vimrc.local
