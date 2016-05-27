@@ -1,7 +1,7 @@
 execute pathogen#infect()
 
 " tab indents and stuff
-com! -bar -count=4 HardTab set ts=<count> sw=<count> noet
+com! -bar -count=4 HardTab set ts=<count> sts=0 sw=<count> noet
 com! -bar -count=4 SoftTab set ts=8 sts=<count> sw=<count> et
 HardTab
 
