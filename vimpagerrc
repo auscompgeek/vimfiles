@@ -1,3 +1,9 @@
+call pathogen#surround('~/.vim/bundle/tagbar')
+call pathogen#surround('~/.vim/bundle/rust.vim')
+call pathogen#surround('~/.vim/bundle/vim-fish')
+call pathogen#surround('~/.vim/bundle/vim-processing')
+call pathogen#surround('~/.vim/bundle/vim-unimpaired')
+
 if has('autocmd')
 	filetype plugin indent on
 endif
@@ -22,5 +28,8 @@ nnoremap gz :!zeal --query "<cword>"&<CR><CR>
 if &t_Co == 256
 	colo Tomorrow-Night-Bright
 endif
+
+" tagbar
+nnoremap <F8> :TagbarToggle<CR>
 
 " vim: ft=vim
