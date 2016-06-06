@@ -57,11 +57,6 @@ endif
 " Tomorrow-Night-Bright looks weird with 88 colours.
 if has('gui_running') || &t_Co == 256
 	colo Tomorrow-Night-Bright
-
-	" highlight current line
-	" (lack of colors makes cursorline look weird)
-	" commented because redraws take forever when enabled
-	"set cursorline
 endif
 
 " apparently terminals are small?
