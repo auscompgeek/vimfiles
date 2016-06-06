@@ -71,7 +71,7 @@ set colorcolumn=80,132
 set ignorecase smartcase
 
 " airline shiz
-if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || &term !~# '^linux\|^putty')
+if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || $TERM !~# '^linux\|^putty')
 	let g:airline_powerline_fonts = 1
 else
 	let g:airline_left_sep = ''
