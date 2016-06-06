@@ -59,6 +59,10 @@ if has('gui_running') || &t_Co == 256
 	colo Tomorrow-Night-Bright
 endif
 
+if has('termtruecolor') && &term == 'xterm-termite'
+	set guicolors
+endif
+
 " apparently terminals are small?
 set colorcolumn=80,132
 
