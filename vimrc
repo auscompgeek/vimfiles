@@ -64,6 +64,9 @@ set colorcolumn=80,132
 " ignore case by default when searching, except when I use uppercase
 set ignorecase smartcase
 
+" tell me what command I'm typing
+set showcmd
+
 " airline shiz
 if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || $TERM !~# '^linux\|^putty')
 	let g:airline_powerline_fonts = 1
