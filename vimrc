@@ -54,8 +54,31 @@ if has('gui_running') || &t_Co == 256
 	colo Tomorrow-Night-Bright
 endif
 
-if has('termtruecolor') && &term == 'xterm-termite'
-	set guicolors
+" enable true colour support if we're 99% sure our terminal supports it
+if !has('gui_running') && ($COLORTERM == 'truecolor' ? $TERM !~ '^screen' : $TERM == 'xterm-termite' || $TERM =~ '^konsole')
+	" vim only sets these if we're in an xterm
+	if !has('nvim') && &term !~# '^xterm'
+		let &t_8f = "\<Esc>[38;2;%ld;%ld;%ldm"
+		let &t_8b = "\<Esc>[48;2;%ld;%ld;%ldm"
+	endif
+	if has('termguicolors')  " vim 7.4.1799
+		set termguicolors
+	elseif has('termtruecolor')  " vim 7.4.1770
+		set guicolors
+	elseif has('nvim')  " neovim pre-PR4690
+		let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
+	endif
+endif
+
+" set cursor shape
+if $TERM =~ '\v^xterm|^rxvt|^konsole|^screen|^tmux'
+	if has('nvim')
+		let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
+	else
+		let &t_SI = "\<Esc>[5 q"
+		let &t_SR = "\<Esc>[3 q"
+		let &t_EI = "\<Esc>[0 q"
+	endif
 endif
 
 " apparently terminals are small?
