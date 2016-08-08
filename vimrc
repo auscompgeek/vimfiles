@@ -107,7 +107,6 @@ autocmd FileType html,css EmmetInstall
 
 " jedi
 let g:jedi#show_call_signatures = 2
-au BufNewFile,BufRead *.pyi setf python
 
 "let g:python_space_error_highlight = 1
 
