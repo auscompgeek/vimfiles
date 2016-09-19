@@ -37,9 +37,6 @@
 [submodule "bundle/vim-processing"]
 	path = bundle/vim-processing
 	url = https://github.com/sophacles/vim-processing.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
