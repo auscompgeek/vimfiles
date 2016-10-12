@@ -55,7 +55,7 @@ if has('gui_running') || &t_Co == 256
 endif
 
 " enable true colour support if we're 99% sure our terminal supports it
-if !has('gui_running') && ($COLORTERM == 'truecolor' ? $TERM !~ '^screen' : $TERM == 'xterm-termite' || $TERM =~ '^konsole')
+if !has('gui_running') && ($COLORTERM == 'truecolor' ? $TERM !~ '^screen|^dvtm' : $TERM == 'xterm-termite' || $TERM =~ '^konsole')
 	" vim only sets these if we're in an xterm
 	if !has('nvim') && &term !~# '^xterm'
 		let &t_8f = "\<Esc>[38;2;%ld;%ld;%ldm"
