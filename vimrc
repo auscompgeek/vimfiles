@@ -43,7 +43,7 @@ endif
 set noswf
 
 " look up word under the cursor in Zeal
-nnoremap gz :!zeal --query "<cword>"&<CR><CR>
+nnoremap gz :!zeal "<cword>"&<CR><CR>
 
 " my shift-finger is falling off
 noremap ; :
