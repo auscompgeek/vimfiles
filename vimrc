@@ -76,7 +76,9 @@ if $TERM =~ '\v^xterm|^rxvt|^konsole|^screen|^tmux'
 		let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
 	elseif has('cursorshape')
 		let &t_SI = "\<Esc>[5 q"
-		let &t_SR = "\<Esc>[3 q"
+		if exists('+t_SR')
+			let &t_SR = "\<Esc>[3 q"
+		endif
 		let &t_EI = "\<Esc>[0 q"
 	endif
 endif
