@@ -45,9 +45,9 @@ set noswf
 " look up word under the cursor in Zeal
 nnoremap gz :!zeal "<cword>"&<CR><CR>
 
-" my shift-finger is falling off
-noremap ; :
-noremap , ;
+" pressing shift is hard
+noremap <CR> :
+noremap <Space> :
 
 " Tomorrow-Night-Bright looks weird with 88 colours.
 if has('gui_running') || &t_Co == 256
