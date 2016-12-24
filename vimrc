@@ -121,9 +121,8 @@ let g:syntastic_ignore_files = ['\M.pyi$']
 nnoremap <F3> :Errors<CR>
 nnoremap <F4> :SyntasticToggleMode<CR>
 
-" gundo
-let g:gundo_prefer_python3 = 1
-nnoremap <F5> :GundoToggle<CR>
+" undotree
+nnoremap <F5> :UndotreeToggle<CR>
 
 " tagbar
 nnoremap <F8> :TagbarToggle<CR>
