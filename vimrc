@@ -49,6 +49,10 @@ nnoremap gz :!zeal "<cword>"&<CR><CR>
 noremap <CR> :
 noremap <Space> :
 
+" retain visual state on shifts
+vnoremap < <gv
+vnoremap > >gv
+
 " Tomorrow-Night-Bright looks weird with 88 colours.
 if has('gui_running') || &t_Co == 256
 	colo Tomorrow-Night-Bright
