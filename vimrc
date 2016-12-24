@@ -39,9 +39,6 @@ if has('mouse')
 	set mouse=a
 endif
 
-" swapfiles are annoying
-set noswf
-
 " look up word under the cursor in Zeal
 nnoremap gz :!zeal "<cword>"&<CR><CR>
 
