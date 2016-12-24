@@ -1,31 +1,30 @@
 execute pathogen#infect()
 
 " tab indents and stuff
-com! -bar -count=4 HardTab set ts=<count> sts=0 sw=<count> noet
-com! -bar -count=4 SoftTab set ts=8 sts=<count> sw=<count> et
+command! -bar -count=4 HardTab set tabstop=<count> softtabstop=0 shiftwidth=0 noexpandtab
+command! -bar -count=4 SoftTab set tabstop=8 softtabstop=<count> shiftwidth=<count> expandtab
 HardTab
 
 nnoremap <expr> cot ToggleTab()
 nnoremap [ot :SoftTab<CR>
 nnoremap ]ot :HardTab<CR>
 
-func ToggleTab()
-	if &et
+function! ToggleTab()
+	if &expandtab
 		HardTab
 	else
 		SoftTab
 	endif
-endfunc
+endfunction
 
 " show line numbers
-set nu
+set number
 
 " get rid of the not-very-useful GUI toolbar
-set go-=T
-" and the scrollbar as well
-set go-=r
-" and the other one
-set go-=L
+" not that I really use gvim...
+set guioptions-=T
+" and the scrollbars as well
+set guioptions-=r guioptions-=L
 
 " nicer font for my gvim
 if has('win32')
@@ -52,7 +51,7 @@ vnoremap > >gv
 
 " Tomorrow-Night-Bright looks weird with 88 colours.
 if has('gui_running') || &t_Co == 256
-	colo Tomorrow-Night-Bright
+	colorscheme Tomorrow-Night-Bright
 endif
 
 " enable true colour support if we're 99% sure our terminal supports it
@@ -118,8 +117,8 @@ set noshowmode
 let g:SuperTabDefaultCompletionType = "context"
 
 " delimitMate
-au FileType python let b:delimitMate_nesting_quotes = ['"']
-au FileType markdown let b:delimitMate_nesting_quotes = ['`']
+autocmd FileType python let b:delimitMate_nesting_quotes = ['"']
+autocmd FileType markdown let b:delimitMate_nesting_quotes = ['`']
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
