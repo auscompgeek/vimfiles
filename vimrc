@@ -100,6 +100,9 @@ set ignorecase smartcase
 " tell me what command I'm typing
 set showcmd
 
+" make command mode tab complete nicer
+set wildmode=longest,full
+
 " airline shiz
 if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || $TERM !~# '^linux\|^putty')
 	let g:airline_powerline_fonts = 1
