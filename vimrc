@@ -55,19 +55,13 @@ if has('gui_running') || &t_Co == 256
 endif
 
 " enable true colour support if we're 99% sure our terminal supports it
-if !has('gui_running') && ($COLORTERM == 'truecolor' ? $TERM !~ '^screen\|^dvtm' : $TERM == 'xterm-termite' || $TERM =~ '^konsole')
+if !has('gui_running') && has('termguicolors') && ($COLORTERM == 'truecolor' ? $TERM !~ '^screen\|^dvtm' : $TERM == 'xterm-termite' || $TERM =~ '^konsole')
 	" vim only sets these if we're in an xterm
 	if !has('nvim') && &term !~# '^xterm'
 		let &t_8f = "\<Esc>[38;2;%ld;%ld;%ldm"
 		let &t_8b = "\<Esc>[48;2;%ld;%ld;%ldm"
 	endif
-	if has('termguicolors')  " vim 7.4.1799
-		set termguicolors
-	elseif has('termtruecolor')  " vim 7.4.1770
-		set guicolors
-	elseif has('nvim')  " neovim pre-PR4690
-		let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
-	endif
+	set termguicolors
 endif
 
 " set cursor shape
