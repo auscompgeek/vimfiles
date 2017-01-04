@@ -1,10 +1,8 @@
-" Taken from https://github.com/ConradIrwin/vim-bracketed-paste,
-" without the tmux wrapping, since tmux 1.7+ supports bracketed paste.
-" Also prefers native Neovim support.
+" Taken from https://github.com/ConradIrwin/vim-bracketed-paste.
+" Prefers native Neovim support.
 
 " Code from:
 " http://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x
-" then https://coderwall.com/p/if9mda
 " and then https://github.com/aaronjensen/vimfiles/blob/59a7019b1f2d08c70c28a41ef4e2612470ea0549/plugin/terminaltweaks.vim
 " to fix the escape time problem with insert mode.
 "
@@ -21,16 +19,10 @@ endif
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
 
-function! XTermPasteBegin(ret)
-  set pastetoggle=<f29>
-  set paste
-  return a:ret
+function! XTermPasteBegin()
+	set paste pastetoggle=<f29>
 endfunction
 
 execute "set <f28>=\<Esc>[200~"
 execute "set <f29>=\<Esc>[201~"
-map <expr> <f28> XTermPasteBegin("i")
-imap <expr> <f28> XTermPasteBegin("")
-vmap <expr> <f28> XTermPasteBegin("c")
-cmap <f28> <nop>
-cmap <f29> <nop>
+imap <expr> <f28> XTermPasteBegin()
