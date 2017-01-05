@@ -42,7 +42,6 @@ endif
 nnoremap gz :!zeal "<cword>"&<CR><CR>
 
 " pressing shift is hard
-noremap <CR> :
 noremap <Space> :
 
 " retain visual state on shifts
