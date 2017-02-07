@@ -66,7 +66,7 @@ endif
 " set cursor shape
 if $TERM =~ '\v^xterm|^rxvt-unicode|^konsole'
 	if has('nvim')
-		let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
+		let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 2
 	elseif has('cursorshape')
 		if $TERM =~ '^konsole' || $TERM_PROGRAM == 'iTerm.app'
 			let &t_SI = "\<Esc>]50;CursorShape=1\x7"
