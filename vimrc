@@ -48,6 +48,9 @@ noremap <Space> :
 vnoremap < <gv
 vnoremap > >gv
 
+" write files even faster
+nnoremap <Leader>w :w<CR>
+
 " Tomorrow-Night-Bright looks weird with 88 colours.
 if has('gui_running') || &t_Co == 256
 	colorscheme Tomorrow-Night-Bright
