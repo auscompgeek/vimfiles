@@ -67,11 +67,11 @@ if !has('gui_running') && has('termguicolors') && ($COLORTERM == 'truecolor' ? $
 endif
 
 " set cursor shape
-if $TERM =~ '\v^xterm|^rxvt-unicode|^konsole'
+if $TERM =~ '\v^(xterm|rxvt-unicode|konsole|gnome|vte|tmux)'
 	if has('nvim')
 		let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 2
 	elseif has('cursorshape')
-		if $TERM =~ '^konsole' || $TERM_PROGRAM == 'iTerm.app'
+		if $TERM =~ '^konsole' || $TERM_PROGRAM == 'iTerm.app' && $TERM !~ '^tmux'
 			let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 			if exists('+t_SR')
 				let &t_SR = "\<Esc>]50;CursorShape=2\x7"
