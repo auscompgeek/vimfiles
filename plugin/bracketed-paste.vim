@@ -1,5 +1,5 @@
 " Taken from https://github.com/ConradIrwin/vim-bracketed-paste.
-" Prefers native Neovim support.
+" Prefers native Neovim and Vim 8 support.
 
 " Code from:
 " http://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x
@@ -11,8 +11,8 @@
 " Docs on mapping fast escape codes in vim
 " http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
 
-" Neovim has bracketed paste support.
-if has('nvim')
+" Neovim and Vim 8.0.0210 have bracketed paste support.
+if has('nvim') || v:version >= 801 || (v:version == 800 && has('patch210'))
 	finish
 endif
 
