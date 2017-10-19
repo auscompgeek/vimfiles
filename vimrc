@@ -129,6 +129,7 @@ let g:SuperTabDefaultCompletionType = "context"
 augroup vimrc
 	autocmd FileType python let b:delimitMate_nesting_quotes = ['"']
 	autocmd FileType markdown let b:delimitMate_nesting_quotes = ['`']
+	autocmd FileType lisp let b:delimitMate_quotes = '"'
 augroup END
 
 " syntastic
