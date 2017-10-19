@@ -17,6 +17,10 @@ function! ToggleTab()
 	endif
 endfunction
 
+augroup vimrc
+	autocmd!
+augroup END
+
 " show line numbers
 set number
 
@@ -122,8 +126,10 @@ set noshowmode
 let g:SuperTabDefaultCompletionType = "context"
 
 " delimitMate
-autocmd FileType python let b:delimitMate_nesting_quotes = ['"']
-autocmd FileType markdown let b:delimitMate_nesting_quotes = ['`']
+augroup vimrc
+	autocmd FileType python let b:delimitMate_nesting_quotes = ['"']
+	autocmd FileType markdown let b:delimitMate_nesting_quotes = ['`']
+augroup END
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
@@ -142,7 +148,9 @@ nnoremap <F8> :TagbarToggle<CR>
 
 " emmet
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+augroup vimrc
+	autocmd FileType html,css EmmetInstall
+augroup END
 
 " jedi
 let g:jedi#show_call_signatures = 2
