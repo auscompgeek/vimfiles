@@ -91,6 +91,14 @@ if $TERM =~ '\v^(xterm|rxvt-unicode|konsole|gnome|vte|tmux)'
 	endif
 endif
 
+" fix vim in tmux with xterm-keys on
+if &term =~ '^tmux'
+	execute "set <xUp>=\e[1;*A"
+	execute "set <xDown>=\e[1;*B"
+	execute "set <xRight>=\e[1;*C"
+	execute "set <xLeft>=\e[1;*D"
+endif
+
 " apparently terminals are small?
 set colorcolumn=80,132
 
