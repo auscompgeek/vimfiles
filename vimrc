@@ -64,7 +64,7 @@ if has('gui_running') || &t_Co == 256
 endif
 
 " enable true colour support if we're 99% sure our terminal supports it
-if !has('gui_running') && has('termguicolors') && ($COLORTERM == 'truecolor' ? $TERM !~ '^screen\|^dvtm' : $TERM == 'xterm-termite' || $TERM =~ '^konsole')
+if !has('gui_running') && has('termguicolors') && ($COLORTERM == 'truecolor' ? $TERM !~ '^screen\|^dvtm' : $TERM == 'xterm-termite' || $TERM =~ '\v^(konsole|iterm2|vte|gnome)')
 	" vim only sets these if we're in an xterm
 	if !has('nvim') && &term !~# '^xterm'
 		let &t_8f = "\<Esc>[38;2;%ld;%ld;%ldm"
@@ -78,7 +78,7 @@ if $TERM =~ '\v^(xterm|rxvt-unicode|konsole|gnome|vte|tmux)'
 	if has('nvim')
 		let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 2
 	elseif has('cursorshape')
-		if $TERM =~ '^konsole' || $TERM_PROGRAM == 'iTerm.app' && $TERM !~ '^tmux'
+		if $TERM =~ '^konsole\|^iterm2' || $TERM_PROGRAM == 'iTerm.app' && $TERM !~ '^tmux'
 			let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 			if exists('+t_SR')
 				let &t_SR = "\<Esc>]50;CursorShape=2\x7"
