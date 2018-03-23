@@ -79,3 +79,9 @@
 [submodule "bundle/vim-javacomplete2"]
 	path = bundle/vim-javacomplete2
 	url = https://github.com/artur-shaik/vim-javacomplete2.git
+[submodule "bundle/vim-vue"]
+	path = bundle/vim-vue
+	url = https://github.com/posva/vim-vue.git
+[submodule "bundle/vim-pug"]
+	path = bundle/vim-pug
+	url = https://github.com/digitaltoad/vim-pug.git
