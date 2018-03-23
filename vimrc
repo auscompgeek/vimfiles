@@ -74,7 +74,7 @@ if !has('gui_running') && has('termguicolors') && ($COLORTERM == 'truecolor' ? $
 endif
 
 " set cursor shape
-if $TERM =~ '\v^(xterm|rxvt-unicode|konsole|gnome|vte|tmux)'
+if $TERM =~ '\v^(xterm|rxvt-unicode|konsole|gnome|vte|tmux|iterm2)'
 	if has('nvim')
 		let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 2
 	elseif has('cursorshape')
