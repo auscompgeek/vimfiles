@@ -71,6 +71,10 @@ if !has('gui_running') && has('termguicolors') && ($COLORTERM == 'truecolor' ? $
 		let &t_8b = "\<Esc>[48;2;%ld;%ld;%ldm"
 	endif
 	set termguicolors
+
+	" and use the vim-hybrid colour scheme
+	let g:hybrid_custom_term_colors = 1
+	colorscheme hybrid
 endif
 
 " set cursor shape
