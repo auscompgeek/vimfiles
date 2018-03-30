@@ -1,87 +1,87 @@
 [submodule "bundle/supertab"]
-	path = bundle/supertab
+	path = pack/dotvim/start/supertab
 	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/syntastic"]
-	path = bundle/syntastic
+	path = pack/dotvim/start/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
+	path = pack/dotvim/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 [submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+	path = pack/dotvim/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-gitgutter"]
-	path = bundle/vim-gitgutter
+	path = pack/dotvim/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/vim-sensible"]
-	path = bundle/vim-sensible
+	path = pack/dotvim/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
 [submodule "bundle/vim-unimpaired"]
-	path = bundle/vim-unimpaired
+	path = pack/dotvim/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+	path = pack/dotvim/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/editorconfig-vim"]
-	path = bundle/editorconfig-vim
+	path = pack/dotvim/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "bundle/vim-processing"]
-	path = bundle/vim-processing
+	path = pack/dotvim/start/vim-processing
 	url = https://github.com/sophacles/vim-processing.git
 [submodule "bundle/tagbar"]
-	path = bundle/tagbar
+	path = pack/dotvim/start/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 [submodule "bundle/vim-fish"]
-	path = bundle/vim-fish
+	path = pack/dotvim/start/vim-fish
 	url = https://github.com/dag/vim-fish.git
 [submodule "bundle/delimitMate"]
-	path = bundle/delimitMate
+	path = pack/dotvim/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
 [submodule "bundle/jedi-vim"]
-	path = bundle/jedi-vim
+	path = pack/dotvim/start/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "bundle/rust.vim"]
-	path = bundle/rust.vim
+	path = pack/dotvim/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
 [submodule "bundle/clang_complete"]
-	path = bundle/clang_complete
+	path = pack/dotvim/start/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete.git
 [submodule "bundle/emmet-vim"]
-	path = bundle/emmet-vim
+	path = pack/dotvim/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
 [submodule "bundle/vim-sneak"]
-	path = bundle/vim-sneak
+	path = pack/dotvim/start/vim-sneak
 	url = https://github.com/justinmk/vim-sneak.git
 [submodule "bundle/vim-characterize"]
-	path = bundle/vim-characterize
+	path = pack/dotvim/start/vim-characterize
 	url = https://github.com/tpope/vim-characterize.git
 [submodule "bundle/vim-eunuch"]
-	path = bundle/vim-eunuch
+	path = pack/dotvim/start/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
 [submodule "bundle/vim-rsi"]
-	path = bundle/vim-rsi
+	path = pack/dotvim/start/vim-rsi
 	url = https://github.com/tpope/vim-rsi.git
 [submodule "bundle/vim-commentary"]
-	path = bundle/vim-commentary
+	path = pack/dotvim/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 [submodule "bundle/undotree"]
-	path = bundle/undotree
+	path = pack/dotvim/start/undotree
 	url = https://github.com/mbbill/undotree.git
 [submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
+	path = pack/dotvim/start/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 [submodule "bundle/vim-snippets"]
-	path = bundle/vim-snippets
+	path = pack/dotvim/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
 [submodule "bundle/vim-toml"]
-	path = bundle/vim-toml
+	path = pack/dotvim/start/vim-toml
 	url = https://github.com/cespare/vim-toml.git
 [submodule "bundle/vim-javacomplete2"]
-	path = bundle/vim-javacomplete2
+	path = pack/dotvim/start/vim-javacomplete2
 	url = https://github.com/artur-shaik/vim-javacomplete2.git
 [submodule "bundle/vim-vue"]
-	path = bundle/vim-vue
+	path = pack/dotvim/start/vim-vue
 	url = https://github.com/posva/vim-vue.git
 [submodule "bundle/vim-pug"]
-	path = bundle/vim-pug
+	path = pack/dotvim/start/vim-pug
 	url = https://github.com/digitaltoad/vim-pug.git
