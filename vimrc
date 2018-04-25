@@ -5,7 +5,7 @@ command! -bar -count=4 HardTab set tabstop=<count> softtabstop=0 shiftwidth=0 no
 command! -bar -count=4 SoftTab set tabstop=8 softtabstop=<count> shiftwidth=<count> expandtab
 HardTab
 
-nnoremap <expr> cot ToggleTab()
+nnoremap <expr> =ot ToggleTab()
 nnoremap [ot :SoftTab<CR>
 nnoremap ]ot :HardTab<CR>
 
