@@ -1,9 +1,3 @@
-call pathogen#surround('~/.vim/bundle/tagbar')
-call pathogen#surround('~/.vim/bundle/rust.vim')
-call pathogen#surround('~/.vim/bundle/vim-fish')
-call pathogen#surround('~/.vim/bundle/vim-processing')
-call pathogen#surround('~/.vim/bundle/vim-unimpaired')
-
 if has('autocmd')
 	filetype plugin indent on
 endif
