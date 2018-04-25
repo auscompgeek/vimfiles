@@ -1,9 +1,6 @@
 [submodule "bundle/supertab"]
 	path = pack/compl/start/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "bundle/syntastic"]
-	path = pack/dotvim/start/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/vim-airline"]
 	path = pack/dotvim/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
@@ -94,3 +91,6 @@
 [submodule "pack/tpope/start/vim-repeat"]
 	path = pack/tpope/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "pack/dotvim/start/neomake"]
+	path = pack/dotvim/start/neomake
+	url = https://github.com/neomake/neomake.git

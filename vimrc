@@ -150,15 +150,15 @@ augroup vimrc
 	autocmd FileType lisp let b:delimitMate_quotes = '"'
 augroup END
 
-" syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 2
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_ignore_files = ['\M.pyi$']
-let g:syntastic_css_checkers = ['stylelint']
-nnoremap <F3> :Errors<CR>
-nnoremap <F4> :SyntasticToggleMode<CR>
+" neomake
+let g:neomake_css_enabled_makers = ['stylelint']
+let g:neomake_python_enabled_makers = ['python', 'flake8']
+augroup vimrc
+	autocmd BufNewFile,BufRead *.pyi b:neomake_python_enabled_makers = ['python']
+augroup END
+
+nnoremap <F3> :lwindow<CR>
+nnoremap <F4> :NeomakeToggle<CR>
 
 " undotree
 nnoremap <F5> :UndotreeToggle<CR>
