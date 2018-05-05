@@ -154,7 +154,7 @@ augroup END
 let g:neomake_css_enabled_makers = ['stylelint']
 let g:neomake_python_enabled_makers = ['python', 'flake8']
 augroup vimrc
-	autocmd BufNewFile,BufRead *.pyi b:neomake_python_enabled_makers = ['python']
+	autocmd BufNewFile,BufRead *.pyi let b:neomake_python_enabled_makers = ['python']
 augroup END
 
 nnoremap <F3> :lwindow<CR>
