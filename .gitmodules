@@ -50,7 +50,7 @@
 	path = pack/dotvim/start/vim-sneak
 	url = https://github.com/justinmk/vim-sneak.git
 [submodule "bundle/vim-characterize"]
-	path = pack/dotvim/start/vim-characterize
+	path = pack/tpope/start/vim-characterize
 	url = https://github.com/tpope/vim-characterize.git
 [submodule "bundle/vim-eunuch"]
 	path = pack/tpope/start/vim-eunuch
