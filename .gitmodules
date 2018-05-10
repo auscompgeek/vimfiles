@@ -94,3 +94,6 @@
 [submodule "pack/dotvim/start/neomake"]
 	path = pack/dotvim/start/neomake
 	url = https://github.com/neomake/neomake.git
+[submodule "pack/tpope/start/vim-apathy"]
+	path = pack/tpope/start/vim-apathy
+	url = https://github.com/tpope/vim-apathy.git
