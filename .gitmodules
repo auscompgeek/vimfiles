@@ -97,3 +97,6 @@
 [submodule "pack/tpope/start/vim-apathy"]
 	path = pack/tpope/start/vim-apathy
 	url = https://github.com/tpope/vim-apathy.git
+[submodule "pack/compl/start/vim-racer"]
+	path = pack/compl/start/vim-racer
+	url = https://github.com/racer-rust/vim-racer.git
