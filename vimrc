@@ -99,7 +99,7 @@ if $TERM =~ '\v^(xterm|rxvt-unicode|konsole|gnome|vte|tmux|iterm2)'
 endif
 
 " fix vim in tmux with xterm-keys on
-if &term =~ '^tmux'
+if !has('nvim') && &term =~ '^tmux'
 	execute "set <xUp>=\e[1;*A"
 	execute "set <xDown>=\e[1;*B"
 	execute "set <xRight>=\e[1;*C"
