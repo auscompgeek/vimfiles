@@ -55,8 +55,7 @@ vnoremap > >gv
 " write files even faster
 nnoremap <Leader>w :w<CR>
 " fly between buffers
-" note space at end of line
-nnoremap <Leader>b :ls<CR>:b 
+nnoremap <Leader>b :ls<CR>:b<Space>
 
 " Tomorrow-Night-Bright looks weird with 88 colours.
 if has('gui_running') || &t_Co == 256
