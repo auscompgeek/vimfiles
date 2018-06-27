@@ -1,4 +1,6 @@
-execute pathogen#infect()
+if !has('packages')
+	execute pathogen#infect()
+endif
 
 " tab indents and stuff
 command! -bar -count=4 HardTab set tabstop=<count> softtabstop=0 shiftwidth=0 noexpandtab
