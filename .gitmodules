@@ -100,3 +100,6 @@
 [submodule "pack/compl/start/vim-racer"]
 	path = pack/compl/start/vim-racer
 	url = https://github.com/racer-rust/vim-racer.git
+[submodule "pack/compl/start/echodoc.vim"]
+	path = pack/compl/start/echodoc.vim
+	url = https://github.com/Shougo/echodoc.vim.git
