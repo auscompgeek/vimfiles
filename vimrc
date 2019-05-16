@@ -177,5 +177,7 @@ let g:jedi#popup_on_dot = 0
 
 "let g:python_space_error_highlight = 1
 
+let g:echodoc#enable_at_startup = 1
+
 " source a local vimrc, if any
 runtime! vimrc.local
