@@ -129,7 +129,7 @@ if exists('$XDG_RUNTIME_DIR')
 endif
 
 " airline shiz
-if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || $TERM !~# '^linux\|^putty')
+if (&encoding == 'utf-8' || &termencoding == 'utf-8') && (has('gui_running') || $TERM =~ '\v^xterm-(kitty|termite)|^konsole')
 	let g:airline_powerline_fonts = 1
 else
 	let g:airline#extensions#tabline#left_alt_sep = ''
