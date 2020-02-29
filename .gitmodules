@@ -34,9 +34,6 @@
 [submodule "bundle/delimitMate"]
 	path = pack/dotvim/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule "bundle/jedi-vim"]
-	path = pack/compl/start/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "bundle/rust.vim"]
 	path = pack/lang/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
