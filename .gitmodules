@@ -23,7 +23,7 @@
 	path = pack/dotvim/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "bundle/vim-processing"]
-	path = pack/lang/start/vim-processing
+	path = pack/lang/opt/vim-processing
 	url = https://github.com/sophacles/vim-processing.git
 [submodule "bundle/tagbar"]
 	path = pack/dotvim/start/tagbar
@@ -106,3 +106,6 @@
 [submodule "pack/lang/start/typescript-vim"]
 	path = pack/lang/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "pack/lang/start/vim-hy"]
+	path = pack/lang/start/vim-hy
+	url = https://github.com/hylang/vim-hy.git
