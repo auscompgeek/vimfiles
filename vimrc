@@ -128,6 +128,9 @@ if exists('$XDG_RUNTIME_DIR')
 	set directory^=$XDG_RUNTIME_DIR//
 endif
 
+" title for knausj_talon - filename is expected after the last )
+let &titlestring = (has('nvim') ? 'N' : '') . 'VIM MODE:%{mode()}%( %M%{&ro && &ma ?"=":""}%) (%{expand("%:p:~:h")})%a %t'
+
 " airline shiz
 let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline_exclude_preview = 1
