@@ -100,9 +100,6 @@
 [submodule "pack/compl/start/echodoc.vim"]
 	path = pack/compl/start/echodoc.vim
 	url = https://github.com/Shougo/echodoc.vim.git
-[submodule "pack/lang/start/typescript-vim"]
-	path = pack/lang/start/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "pack/lang/start/vim-hy"]
 	path = pack/lang/start/vim-hy
 	url = https://github.com/hylang/vim-hy.git
