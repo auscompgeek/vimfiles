@@ -151,10 +151,10 @@ augroup END
 
 " neomake
 let g:neomake_css_enabled_makers = ['stylelint']
-let g:neomake_python_enabled_makers = ['python', 'flake8']
-augroup vimrc
-	autocmd BufNewFile,BufRead *.pyi let b:neomake_python_enabled_makers = ['python']
-augroup END
+if executable('flake8')
+	" use only flake8 if it's installed
+	let g:neomake_python_enabled_makers = ['flake8']
+endif
 
 nnoremap <F3> :lwindow<CR>
 nnoremap <F4> :NeomakeToggle<CR>
