@@ -83,7 +83,7 @@ if !has('gui_running') && has('termguicolors') && (&t_Co == 16777216 || $COLORTE
 endif
 
 " set cursor shape
-if $TERM =~ '\v^(xterm|rxvt-unicode|konsole|gnome|vte|tmux|iterm2)'
+if $TERM =~ '\v^(xterm|rxvt-unicode|konsole|gnome|vte|tmux|iterm2|alacritty)'
 	if has('nvim')
 		let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 2
 	elseif has('cursorshape')
