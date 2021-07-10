@@ -175,4 +175,4 @@ if !exists('g:vscode')
 endif
 
 " source a local vimrc, if any
-runtime! vimrc.local
+runtime local.vim
