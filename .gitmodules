@@ -2,13 +2,13 @@
 	path = pack/compl/start/supertab
 	url = https://github.com/ervandew/supertab.git
 [submodule "bundle/vim-airline"]
-	path = pack/dotvim/start/vim-airline
+	path = pack/ui/opt/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 [submodule "bundle/vim-fugitive"]
 	path = pack/tpope/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-gitgutter"]
-	path = pack/dotvim/start/vim-gitgutter
+	path = pack/ui/opt/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/vim-sensible"]
 	path = pack/tpope/start/vim-sensible
@@ -26,7 +26,7 @@
 	path = pack/lang/opt/vim-processing
 	url = https://github.com/sophacles/vim-processing.git
 [submodule "bundle/tagbar"]
-	path = pack/dotvim/start/tagbar
+	path = pack/ui/opt/tagbar
 	url = https://github.com/majutsushi/tagbar.git
 [submodule "bundle/vim-fish"]
 	path = pack/lang/start/vim-fish

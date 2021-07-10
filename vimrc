@@ -172,5 +172,11 @@ let g:jedi#popup_on_dot = 0
 
 let g:echodoc#enable_at_startup = 1
 
+if !exists('g:vscode')
+	packadd! tagbar
+	packadd! vim-gitgutter
+	packadd! vim-airline
+endif
+
 " source a local vimrc, if any
 runtime! vimrc.local
