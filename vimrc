@@ -155,9 +155,6 @@ endif
 nnoremap <F3> :lwindow<CR>
 nnoremap <F4> :NeomakeToggle<CR>
 
-" undotree
-nnoremap <F5> :UndotreeToggle<CR>
-
 " tagbar
 nnoremap <F8> :TagbarToggle<CR>
 
