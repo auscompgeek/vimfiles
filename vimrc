@@ -83,23 +83,19 @@ if !has('gui_running') && has('termguicolors') && (&t_Co == 16777216 || $COLORTE
 endif
 
 " set cursor shape
-if $TERM =~ '\v^(xterm|rxvt-unicode|konsole|gnome|vte|tmux|iterm2|alacritty)'
-	if has('nvim')
-		let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 2
-	elseif has('cursorshape')
-		if $TERM =~ '^konsole\|^iterm2' || $TERM_PROGRAM == 'iTerm.app' && $TERM !~ '^tmux'
-			let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-			if exists('+t_SR')
-				let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-			endif
-			let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-		else
-			let &t_SI = "\<Esc>[5 q"
-			if exists('+t_SR')
-				let &t_SR = "\<Esc>[3 q"
-			endif
-			let &t_EI = "\<Esc>[0 q"
+if has('cursorshape') && !has('nvim')
+	if $TERM =~ '\v^(rxvt-unicode|gnome|vte|tmux|alacritty)' || ($TERM =~ '^xterm' && $TERM_PROGRAM != 'iTerm.app')
+		let &t_SI = "\<Esc>[5 q"
+		if exists('+t_SR')
+			let &t_SR = "\<Esc>[3 q"
 		endif
+		let &t_EI = "\<Esc>[0 q"
+	elseif $TERM =~ '^konsole\|^iterm2' || ($TERM_PROGRAM == 'iTerm.app' && $TERM =~ '^xterm')
+		let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+		if exists('+t_SR')
+			let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+		endif
+		let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 	endif
 endif
 
