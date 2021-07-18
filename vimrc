@@ -138,7 +138,7 @@ let g:user_emmet_install_global = 0
 let g:echodoc#enable_at_startup = 1
 
 if !exists('g:vscode')
-	execute 'source' fnamemodify(expand('<sfile>'), ':h').'/not-vscode.vim'
+	source <sfile>:h/not-vscode.vim
 endif
 
 " source a local vimrc, if any
