@@ -35,6 +35,8 @@ set guioptions-=r guioptions-=L
 " nicer font for my gvim
 if has('win32')
 	set guifont=Consolas
+elseif has('mac')
+	set guifont=Menlo
 else
 	set guifont=Monospace\ 9
 endif
