@@ -99,8 +99,12 @@ if exists('$XDG_RUNTIME_DIR')
 	set directory^=$XDG_RUNTIME_DIR//
 endif
 
-" title for knausj_talon - filename is expected after the last )
-let &titlestring = (has('nvim') ? 'N' : '') . 'VIM MODE:%{mode()}%( %M%{&ro && &ma ?"=":""}%) (%{expand("%:p:~:h")})%a %t'
+" title for fidgetingbits/knausj_talon - filename is expected after the last )
+let &titlestring = (has('nvim') ? 'N' : '') . 'VIM'
+	\ .' MODE:%{mode()}'
+	\ .'%( %M%{&ro && &ma ?"=":""}%)'
+	\ .' (%{&buflisted && &buftype == "" ? expand("%:p:~:h") : &buftype})'
+	\ .'%a %t'
 
 " airline shiz
 let g:airline#extensions#tabline#left_alt_sep = ''
