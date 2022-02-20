@@ -97,3 +97,6 @@
 [submodule "pack/lang/start/vim-hy"]
 	path = pack/lang/start/vim-hy
 	url = https://github.com/hylang/vim-hy.git
+[submodule "pack/lang/start/vim-nix"]
+	path = pack/lang/start/vim-nix
+	url = https://github.com/LnL7/vim-nix.git
