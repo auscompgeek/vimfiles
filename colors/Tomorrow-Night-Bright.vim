@@ -341,6 +341,19 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("pythonRepeat", s:aqua, "", "")
 	call <SID>X("pythonExClass", s:orange, "", "")
 
+	" Go Highlighting
+	call <SID>X("goStatement", s:purple, "", "")
+	call <SID>X("goConditional", s:purple, "", "")
+	call <SID>X("goRepeat", s:purple, "", "")
+	call <SID>X("goException", s:purple, "", "")
+	call <SID>X("goDeclaration", s:blue, "", "")
+	call <SID>X("goConstants", s:yellow, "", "")
+	call <SID>X("goBuiltins", s:orange, "", "")
+
+	" CoffeeScript Highlighting
+	call <SID>X("coffeeKeyword", s:purple, "", "")
+	call <SID>X("coffeeConditional", s:purple, "", "")
+
 	" JavaScript Highlighting
 	call <SID>X("javaScriptBraces", s:foreground, "", "")
 	call <SID>X("javaScriptFunction", s:purple, "", "")
@@ -348,6 +361,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")
 	call <SID>X("javaScriptMember", s:orange, "", "")
+	call <SID>X("javaScriptTemplateVar", s:red, "", "")
+	call <SID>X("javaScriptTemplateDelim", s:orange, "", "")
+	call <SID>X("javaScriptTemplateString", s:green, "", "")
 	call <SID>X("javascriptNull", s:orange, "", "")
 	call <SID>X("javascriptGlobal", s:blue, "", "")
 	call <SID>X("javascriptStatement", s:red, "", "")
