@@ -37,9 +37,6 @@
 [submodule "bundle/rust.vim"]
 	path = pack/lang/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
-[submodule "bundle/clang_complete"]
-	path = pack/compl/start/clang_complete
-	url = https://github.com/Rip-Rip/clang_complete.git
 [submodule "bundle/emmet-vim"]
 	path = pack/dotvim/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
@@ -88,9 +85,6 @@
 [submodule "pack/tpope/start/vim-apathy"]
 	path = pack/tpope/start/vim-apathy
 	url = https://github.com/tpope/vim-apathy.git
-[submodule "pack/compl/start/vim-racer"]
-	path = pack/compl/start/vim-racer
-	url = https://github.com/racer-rust/vim-racer.git
 [submodule "pack/compl/start/echodoc.vim"]
 	path = pack/compl/start/echodoc.vim
 	url = https://github.com/Shougo/echodoc.vim.git
@@ -100,3 +94,6 @@
 [submodule "pack/lang/start/vim-nix"]
 	path = pack/lang/start/vim-nix
 	url = https://github.com/LnL7/vim-nix.git
+[submodule "pack/nvim/start/nvim-lspconfig"]
+	path = pack/nvim/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
